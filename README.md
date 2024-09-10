@@ -4,7 +4,7 @@ emoji: 🩻
 colorFrom: blue
 colorTo: indigo
 sdk: gradio
-short_description: Classical-to-Quantum CNN (with transfer learning) for diagnosing dementia severity from MRI's
+short_description: Classical-to-Quantum CNN (with transfer learning)
 ---
 
 # MindReader Quantum
