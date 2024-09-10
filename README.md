@@ -1,3 +1,11 @@
+---
+title: {{MindReader Quantum}}
+emoji: {{🩻}}
+colorFrom: {{blue}}
+colorTo: {{indigo}}
+sdk: {{gradio}}
+---
+
 # MindReader Quantum
 
 ![](./mindreader-quantum.JPG)
