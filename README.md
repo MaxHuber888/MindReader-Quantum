@@ -1,9 +1,10 @@
 ---
-title: {{MindReader Quantum}}
-emoji: {{🩻}}
-colorFrom: {{blue}}
-colorTo: {{indigo}}
-sdk: {{gradio}}
+title: MindReader Quantum
+emoji: 🩻
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+short_description: Classical-to-Quantum CNN (with transfer learning)
 ---
 
 # MindReader Quantum
