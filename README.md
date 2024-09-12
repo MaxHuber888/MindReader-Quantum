@@ -11,69 +11,17 @@ short_description: Classical-to-Quantum CNN (with transfer learning)
 
 ![](./mindreader-quantum.JPG)
 
-## Introduction
+In this project, developed during the 2023 MIT IQuHack, my team tackled the IBM/Covalent challenge to leverage quantum computing for a service benefiting everyday users. We created a Hybrid Classical-to-Quantum Neural Network designed to detect dementia severity from brain MRI scans, providing an innovative solution to a pressing healthcare need.
 
-Welcome to the MindReader Quantum Mobile App! Originally created for the 2023 MIT iQuHack hackathon, this application leverages quantum-computing technology to help users determine stages of dementia using MRI images. Built with Flask, Expo, React Native, and powered by a Python backend, this app utilizes a Hybrid Classification Model that employs Classical-to-Quantum transfer learning for improved accuracy.
+Motivation
+The hybrid network structure was chosen to combine the strengths of both classical and quantum computing. By using a pretrained classical Convolutional Neural Network (CNN) to extract rich feature vectors from MRI images, we could take advantage of transfer learning. This approach minimizes the need for large amounts of quantum training data, as the classical CNN already provides generalized, high-level representations of the input data.
 
-## Features
+We then fine-tuned the model using a quantum neural network head. Quantum neural networks (QNNs) offer powerful advantages, especially in terms of parallelization, where quantum computing excels. This allows the model to process complex patterns in the data more efficiently than classical counterparts, particularly when fine-tuning to specific tasks such as detecting varying levels of dementia severity.
 
-- **MRI Image Upload**: Users can upload MRI images directly from their mobile devices.
+Implementation and Accessibility
+Our hybrid network architecture was trained and evaluated using both classical and quantum computing resources, allowing us to push the boundaries of current AI applications. The next step involved connecting this backend to a React-based frontend, aiming to make the service easily accessible to users via their mobile devices.
 
-- **Hybrid Model**: The app utilizes a Hybrid Model that combines classical machine learning with quantum computing techniques for improved image classification.
-
-- **Stage Detection**: The app provides a clear and detailed report on the detected stage of dementia, including relevant medical information.
-
-- **User-Friendly Interface**: A user-friendly and intuitive interface ensures easy navigation and a seamless user experience.
-
-## Technologies Used
-
-- **Frontend**:
-  - React Native: A popular framework for building mobile applications with a native look and feel.
-  - Expo: A set of tools and services for building React Native apps more quickly and easily.
-
-- **Backend**:
-  - Flask: A lightweight web framework for building robust Python web applications.
-  - Python: The programming language used to develop the backend logic and interact with the Hybrid Model.
-
-- **Quantum Computing**:
-  - PennyLane: An open-source quantum machine learning library used for quantum computing integration.
-  - PyTorch: A leading Python library for creating machine learning models.
-
-## Getting Started
-
-To get started with MindReader Quantum, follow these steps:
-
-1. Clone the repository to your local machine.
-
-2. Install the necessary dependencies for both the frontend and backend using `npm` and `pip`.
-
-   ```bash
-   # Frontend (inside the app's frontend directory)
-   cd frontend
-   npm install
-
-   # Backend (inside the app's backend directory)
-   cd backend
-   pip install -r requirements.txt
-   ```
-
-3. Configure your Flask backend to connect to the Hybrid Model and set up the database (if required).
-
-4. Start the development servers:
-
-```bash
-# Frontend (inside the app's frontend directory)
-npm start
-
-# Backend (inside the app's backend directory)
-python app.py
-```
-
-5. Open the Expo app on your mobile device and scan the QR code displayed by the frontend server to launch the app.
-
-## Support and Feedback
-
-If you encounter any issues or have feedback, please don't hesitate to contact us at [support@email.com].
+Our ultimate goal was to make advanced medical imaging analysis more accessible, allowing non-expert users to understand their MRI results and receive early dementia screening from their phones, powered by cutting-edge quantum technology.
 
 ## Acknowledgments
 
