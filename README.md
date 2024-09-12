@@ -19,10 +19,10 @@ The hybrid network structure was chosen to combine the strengths of both classic
 We then fine-tuned the model using a quantum neural network head. Quantum neural networks (QNNs) offer powerful advantages, especially in terms of parallelization, where quantum computing excels. This allows the model to process complex patterns in the data more efficiently than classical counterparts, particularly when fine-tuning to specific tasks such as detecting varying levels of dementia severity.
 
 ## Implementation and Accessibility
-Our hybrid network architecture was trained and evaluated using both classical and quantum computing resources, allowing us to push the boundaries of current AI applications. The next step involved connecting this backend to a React-based frontend, aiming to make the service easily accessible to users via their mobile devices.
+Our original plan for this project was to connect our model to a React-based frontend, aiming to make the service easily accessible to users via their mobile devices. Having since revisited and polished the project, the model is now available as a Gradio demo on HuggingFace where anyone can try it.
 
 Our ultimate goal was to make advanced medical imaging analysis more accessible, allowing non-expert users to understand their MRI results and receive early dementia screening from their phones, powered by cutting-edge quantum technology.
 
-## Acknowledgments
+## Acknowledgements
 
 We would like to express our gratitude to the open-source community and the developers of the tools and technologies that made this project possible. Additionally, we extend our thanks to the healthcare professionals and researchers working tirelessly to improve the lives of those affected by Alzheimer's and dementia.
